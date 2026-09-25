@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c3mcph6egew5j"]
+
+[ext_resource type="PackedScene" uid="uid://fe8g2borme3u" path="res://Assets/models/building/wall_arched.glb" id="1_hmuvx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3l2vh"]
+size = Vector3(4, 4, 0.7)
+
+[node name="wall_arched" type="StaticBody3D" unique_id=1654712472]
+
+[node name="wall_arched" parent="." unique_id=218970542 instance=ExtResource("1_hmuvx")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1083914659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9925253, 0)
+shape = SubResource("BoxShape3D_3l2vh")

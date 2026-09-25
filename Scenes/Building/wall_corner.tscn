@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b3itwrb4a3p6j"]
+
+[ext_resource type="PackedScene" uid="uid://drrpt27u4vegj" path="res://Assets/models/building/wall_corner.glb" id="1_ebqd3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3l2vh"]
+size = Vector3(0.7, 4, 2.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kiwcf"]
+size = Vector3(2.3518798, 4, 0.7)
+
+[node name="wall_corner" type="StaticBody3D" unique_id=173508771]
+
+[node name="wall_corner" parent="." unique_id=258907084 instance=ExtResource("1_ebqd3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1016122603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.000503, 0.85)
+shape = SubResource("BoxShape3D_3l2vh")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=192899473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8224976, 2.000503, 0)
+shape = SubResource("BoxShape3D_kiwcf")
