@@ -177,4 +177,4 @@ use_collision = true
 size = Vector3(0.7, 1.2, 1)
 
 [node name="DemoPlayer" parent="." unique_id=261734739 instance=ExtResource("6_ooiej")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.5, 0, 0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.5, 0.6028786, 0.5)
